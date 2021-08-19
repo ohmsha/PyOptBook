@@ -1,0 +1,13 @@
+jupyter
+ipython
+notebook
+pandas
+cvxopt
+pulp
+joblib
+matplotlib
+seaborn
+numpy
+flask
+lxml
+requests
