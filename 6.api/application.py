@@ -37,7 +37,7 @@ def preprocess(request):
 
 
 def postprocess(solution_df):
-    """最適化結果をhtml形式に変換する関数"""
+    """最適化結果をHTML形式に変換する関数"""
     solution_html = solution_df.to_html(header=True, index=False)
     return solution_html
 

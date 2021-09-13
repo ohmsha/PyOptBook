@@ -32,9 +32,9 @@ class CarGroupProblem():
         S_male = self.students_df[self.students_df['gender'] == 0]['student_id']
         S_female = self.students_df[self.students_df['gender'] == 1]['student_id']
 
-        # パラメータ
-        # 車の乗車定員のパラメタ
-        U = self.cars_df['capacity']
+        # 定数
+        # 車の乗車定員
+        U = self.cars_df['capacity'].to_list()
 
         # 変数
         # 学生をどの車に割り当てるかを変数として定義
