@@ -1,4 +1,4 @@
-# Pythonではじめる数理最適化 ケーススタディでモデリングのスキルを身につけよう
+# Pythonではじめる数理最適化 <br/>〜ケーススタディでモデリングのスキルを身につけよう〜
 
 <p align="center"><a href="https://www.ohmsha.co.jp/book/9784274227356/"><img width="40%" src="https://www.ohmsha.co.jp/Portals/0/book/small/978-4-274-22735-6.jpg" /></a></p>
 
@@ -39,7 +39,7 @@
 ## 正誤表
 
 [こちらのリンク（正誤表）](正誤表.md)をご覧ください。  
-書籍の誤植を発見された方はIssueを登録して頂けますと幸いです > [こちらから登録できます(https://github.com/ohmsha/PyOptBook/issues/new)](https://github.com/ohmsha/PyOptBook/issues/new)
+書籍の誤植を発見された方はIssueを登録して頂けますと幸いです > [こちらから登録できます](https://github.com/ohmsha/PyOptBook/issues/new)
 
 
 ## 本書で用いた実行環境の情報
