@@ -64,7 +64,7 @@
 
 ## 著者
 
-- 岩永 二郎（株式会社エルデシュ）
+- [岩永 二郎](https://erdos-the-book.com/index.php/iwanaga-jiro/)（株式会社エルデシュ）
 - 石原 響太（ALGORITHMIC NITROUS 株式会社）
 - 西村 直樹（株式会社リクルート）
 - 田中 一樹（株式会社ディー・エヌ・エー）
