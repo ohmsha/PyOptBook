@@ -1,0 +1,174 @@
+{
+  "students": [
+    {
+      "student_id": 0,
+      "license": 0,
+      "gender": 0,
+      "grade": 1
+    },
+    {
+      "student_id": 1,
+      "license": 1,
+      "gender": 1,
+      "grade": 2
+    },
+    {
+      "student_id": 2,
+      "license": 1,
+      "gender": 0,
+      "grade": 3
+    },
+    {
+      "student_id": 3,
+      "license": 1,
+      "gender": 1,
+      "grade": 4
+    },
+    {
+      "student_id": 4,
+      "license": 0,
+      "gender": 1,
+      "grade": 1
+    },
+    {
+      "student_id": 5,
+      "license": 0,
+      "gender": 1,
+      "grade": 2
+    },
+    {
+      "student_id": 6,
+      "license": 0,
+      "gender": 0,
+      "grade": 3
+    },
+    {
+      "student_id": 7,
+      "license": 0,
+      "gender": 1,
+      "grade": 4
+    },
+    {
+      "student_id": 8,
+      "license": 1,
+      "gender": 1,
+      "grade": 1
+    },
+    {
+      "student_id": 9,
+      "license": 1,
+      "gender": 0,
+      "grade": 2
+    },
+    {
+      "student_id": 10,
+      "license": 1,
+      "gender": 1,
+      "grade": 3
+    },
+    {
+      "student_id": 11,
+      "license": 0,
+      "gender": 1,
+      "grade": 4
+    },
+    {
+      "student_id": 12,
+      "license": 1,
+      "gender": 1,
+      "grade": 1
+    },
+    {
+      "student_id": 13,
+      "license": 1,
+      "gender": 0,
+      "grade": 2
+    },
+    {
+      "student_id": 14,
+      "license": 1,
+      "gender": 0,
+      "grade": 3
+    },
+    {
+      "student_id": 15,
+      "license": 1,
+      "gender": 0,
+      "grade": 4
+    },
+    {
+      "student_id": 16,
+      "license": 1,
+      "gender": 1,
+      "grade": 1
+    },
+    {
+      "student_id": 17,
+      "license": 1,
+      "gender": 0,
+      "grade": 2
+    },
+    {
+      "student_id": 18,
+      "license": 0,
+      "gender": 1,
+      "grade": 3
+    },
+    {
+      "student_id": 19,
+      "license": 1,
+      "gender": 0,
+      "grade": 4
+    },
+    {
+      "student_id": 20,
+      "license": 1,
+      "gender": 1,
+      "grade": 1
+    },
+    {
+      "student_id": 21,
+      "license": 0,
+      "gender": 0,
+      "grade": 2
+    },
+    {
+      "student_id": 22,
+      "license": 1,
+      "gender": 1,
+      "grade": 3
+    },
+    {
+      "student_id": 23,
+      "license": 1,
+      "gender": 1,
+      "grade": 4
+    }
+  ],
+  "cars": [
+    {
+      "car_id": 0,
+      "capacity": 6
+    },
+    {
+      "car_id": 1,
+      "capacity": 6
+    },
+    {
+      "car_id": 2,
+      "capacity": 5
+    },
+    {
+      "car_id": 3,
+      "capacity": 4
+    },
+    {
+      "car_id": 4,
+      "capacity": 5
+    },
+    {
+      "car_id": 5,
+      "capacity": 5
+    }
+  ]
+}
