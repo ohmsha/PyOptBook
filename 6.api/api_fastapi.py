@@ -28,7 +28,6 @@ app = FastAPI()
 def preprocess(students, cars):
     """リクエストデータを受け取り、データフレームに変換する関数"""
     # pandas で読み込む
-    print(students)
     students_df = pd.DataFrame(students)
     cars_df = pd.DataFrame(cars)
     return students_df, cars_df
