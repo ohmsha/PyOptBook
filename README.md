@@ -57,7 +57,9 @@
 | データ可視化 | matplotlib | 3.3.4 |
 | データ可視化 | seaborn | 0.11.1 |
 | 科学技術計算 | numpy | 1.20.1 |
-| WEBアプリケーションフレームワーク | flask | 2.0.1 |
+| WEBフレームワーク | flask | 2.0.1 |
+| WEBフレームワーク | fastapi | 0.81.0 |
+| アプリケーションフレームワーク | streamlit | 1.27.1 |
 | HTMLの処理 | lxml | 4.6.3 |
 | HTTPリクエスト | requests | 2.25.1 |
 
