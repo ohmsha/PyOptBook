@@ -1,7 +1,13 @@
 """
-streamlitによるWEBアプリ
+Streamlitによる最適化WEBアプリケーション
 
-$ streamlit run application_st.py
+```
+$ pip install streamlit
+```
+
+```
+$ streamlit run application_streamlit.py
+```
 """
 import pandas as pd
 import streamlit as st  # streamlitのimport

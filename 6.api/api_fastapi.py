@@ -2,15 +2,21 @@
 最適化問題を解き、最適化結果を返すAPI
 
 ```
-$ python api_fastapi.py
+# Install uvicorn
+$ pip install "uvicorn[standard]"
 ```
 
 ```
-$ curl -X 'POST' \
-  'http://127.0.0.1:8000/api' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d @resource/request_fastpai.json
+# Run FastAPI server
+$ uvicorn api_fastapi:app --workers 4
+```
+
+```
+$ curl -X POST \
+    -H 'accept: application/json' \
+    -H 'Content-Type: application/json' \
+    -d @resource/request_fastapi.json \
+    http://127.0.0.1:8000/api
 ```
 """
 from fastapi import FastAPI
