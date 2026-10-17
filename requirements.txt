@@ -3,7 +3,7 @@ ipython
 notebook
 pandas
 cvxopt
-pulp
+pulp==3.2.2
 joblib
 matplotlib
 seaborn
