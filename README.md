@@ -27,12 +27,56 @@
 > ◎ データサイエンティストを志す方
 
 
-## 利用上の注意
+## **【重要】PuLPのバージョンについて**
+2026年9月25日に Python ライブラリ PuLP が3系から4系にメジャーバージョンアップしました。PuLP 4系では本書のサンプルコードをそのまま実行できないことに注意してください。本書では `requirements.txt` にてPuLP 3.2.2 を推奨しています。
 
-- 本書に掲載されている情報は、2021年9月現在のものです。
-- PuLP 4.x がリリースされていますが、本書の内容と一致させるため、`requirements.txt` では PuLP 3.2.2 に固定しています。PuLP 3.2.2 には Python 3.9 以上が必要です。PuLP 4.x への対応は今後行う予定です。
-- ライブラリのバージョンアップなどによって動作しなくなることがありますのでご注意ください。
-  - 第7章で利用するライブラリCVXOPTのインストールがM1チップ搭載Macにて特別な方法でインストールが必要との報告を受けています( [#16](https://github.com/ohmsha/PyOptBook/issues/16) )。
+### PuLP3系のインストール方法（推奨）
+書籍のサンプルコードを実行するため、PuLP 3.2.2 をインストールしてください。PuLP 3.2.2 には Python 3.9 以上が必要です。
+
+pipを利用する場合：
+
+```bash
+pip install "pulp==3.2.2"
+```
+
+### PuLP4系を利用したい場合
+PuLP 4系はPython 3.12 以上が必要です。また、PuLP 4系では **ソルバーのインストール** や **コード修正** が必要です。以下では、主な変更点を以下の①〜③に示します。
+その他の変更点については、PuLP公式の[移行ガイド](https://coin-or.github.io/pulp/guides/how_to_migrate_to_v4.html)をご確認ください。
+
+#### ①ソルバーのインストール
+
+PuLP 4系ではCBCソルバーが標準で同梱されなくなったため、別途インストールが必要となる場合があります。
+
+pipを利用してCBCソルバーをインストールする場合は、ターミナルで次のコマンドを実行してください。
+
+```bash
+python -m pip install pulp[cbc]
+```
+
+#### ②コード修正（変数の定義）
+PuLP 3系：
+```python
+prob = pulp.LpProblem("problem")
+x = pulp.LpVariable("x", cat="Integer")
+```
+PuLP 4系：
+```python
+prob = pulp.LpProblem("problem")
+x = prob.add_variable("x", cat="Integer")
+```
+
+#### ③コード修正（最適化計算後の結果取得）
+
+PuLP 3系：
+```python
+status = prob.solve()
+print(pulp.LpStatus[status])
+```
+PuLP 4系：
+```python
+stats = prob.solve()
+print(stats.status_str)
+```
 
 ## 正誤表
 - [初版の正誤表はこちらのリンク](正誤表.md)をご覧ください。
@@ -41,7 +85,7 @@
 書籍の誤植を発見された方はIssueを登録して頂けますと幸いです > [こちらから登録できます](https://github.com/ohmsha/PyOptBook/issues/new)
 
 
-## 本書で用いた実行環境の情報
+## 動作確認済みの実行環境
 
 PuLP 3.2.2 に合わせて、以下のバージョンで動作確認しています。
 
