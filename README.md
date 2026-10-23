@@ -40,7 +40,7 @@ pip install "pulp==3.2.2"
 ```
 
 ### PuLP4系を利用したい場合
-PuLP 4系はPython 3.12 以上が必要です。また、PuLP 4系では **ソルバーのインストール** や **コード修正** が必要です。以下では、主な変更点を以下の①〜③に示します。
+PuLP 4系はPython 3.12 以上が必要です。また、PuLP 4系では **ソルバーのインストール** や **コードの修正** が必要です。主な変更点を以下の①〜④に示します。
 その他の変更点については、PuLP公式の[移行ガイド](https://coin-or.github.io/pulp/guides/how_to_migrate_to_v4.html)をご確認ください。
 
 #### ①ソルバーのインストール
@@ -50,7 +50,7 @@ PuLP 4系ではCBCソルバーが標準で同梱されなくなったため、�
 pipを利用してCBCソルバーをインストールする場合は、ターミナルで次のコマンドを実行してください。
 
 ```bash
-python -m pip install pulp[cbc]
+python -m pip install "pulp[cbc]"
 ```
 
 #### ②コード修正（変数の定義）
@@ -76,6 +76,22 @@ PuLP 4系：
 ```python
 stats = prob.solve()
 print(stats.status_str)
+```
+
+#### ④コード修正（ソルバーの指定）
+
+PuLP 4系では PULP_CBC_CMD が廃止されたため、代わりに COIN_CMD を利用してください（本書第5章）。
+
+PuLP 3系：
+```python
+solver = pulp.PULP_CBC_CMD(msg=False)
+prob.solve(solver)
+```
+
+PuLP 4系：
+```python
+solver = pulp.COIN_CMD(msg=False)
+prob.solve(solver)
 ```
 
 ## 正誤表
