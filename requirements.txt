@@ -1,13 +1,13 @@
 jupyter
 ipython
 notebook
-pandas
+pandas>=2.2,<3
 cvxopt
-pulp==3.2.2
+pulp[cbc]==4.0.0
 joblib
 matplotlib
 seaborn
-numpy
+numpy==2.2.6
 flask
 lxml
 requests
