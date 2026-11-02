@@ -38,7 +38,7 @@ class CarGroupProblem():
 
         # 変数
         # 学生をどの車に割り当てるかを変数として定義
-        x = pulp.LpVariable.dicts('x', SC, cat='Binary')
+        x = prob.add_variable_dicts('x', SC, cat='Binary')
 
         # 制約
         # (1) 各学生を１つの車に割り当てる
@@ -72,7 +72,9 @@ class CarGroupProblem():
     def solve(self):
         # 最適化問題を解くメソッド
         # 問題を解く
-        status = self.prob['prob'].solve()
+        stats = self.prob['prob'].solve(pulp.COIN_CMD())
+        if not stats.has_solution:
+            raise ValueError(f'実行可能解が得られませんでした: {stats.status_str}')
 
         # 最適化結果を格納
         x = self.prob['variable']['x']

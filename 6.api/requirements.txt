@@ -1,0 +1,7 @@
+pulp[cbc]==4.0.0
+pandas>=2.2,<3
+flask>=3,<4
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+streamlit>=1.27,<2
+lxml>=5,<7
