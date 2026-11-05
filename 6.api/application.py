@@ -1,4 +1,5 @@
 """最適化を解く Webアプリケーション"""
+from io import StringIO
 from flask import Flask, make_response, redirect, render_template, request
 import pandas as pd
 from problem import CarGroupProblem
@@ -67,7 +68,7 @@ def solve():
 def download():
     """リクエストに含まれるHTMLの表形式データをcsv形式に変換してダウンロードする関数"""
     solution_html = request.form.get('solution_html')
-    solution_df = pd.read_html(solution_html)[0]
+    solution_df = pd.read_html(StringIO(solution_html))[0]
     solution_csv = solution_df.to_csv(index=False)
     response = make_response()
     response.data = solution_csv
