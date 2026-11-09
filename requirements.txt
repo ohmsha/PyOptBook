@@ -3,7 +3,7 @@ ipython
 notebook
 pandas
 cvxopt
-pulp==3.2.2
+pulp[cbc]==4.0.0
 joblib
 matplotlib
 seaborn
@@ -11,3 +11,6 @@ numpy
 flask
 lxml
 requests
+fastapi
+uvicorn
+streamlit
